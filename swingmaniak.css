@@ -1,0 +1,105 @@
+/*HTML Elements*/
+body {
+
+	background-color: #252525;
+	background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg3.jpg');
+	background-position: center bottom, center top;
+	background-repeat: no-repeat;
+	background-size: 60%, cover;
+	font-family: Times New Roman, Times;
+	margin: 0px;
+}
+
+h1, h3{
+	font-family: Verdana, Helvetica;
+}
+
+/*Class Elements*/
+.header, .content {
+	width: 95%;
+	margin: 0px auto;
+}
+
+.header {
+	color: Black;
+	height: 45px;
+	min-width: 280px;
+}
+
+.content {
+	color: White;
+	display: block;
+}
+
+/*Page Elemets*/
+#intro, #player, #events{
+	background-image: url('assets/img/grey.png');
+	box-shadow: 0 8px 6px -6px black;
+	width: 28%;
+	min-width: 220px;
+	float: left;	
+	display: inline-block;
+	margin-bottom: 15px;
+	padding: 15px;
+}
+
+#intro, #player {
+	margin-right: 8px;
+}
+
+#intro a {
+	color: Grey;
+	font-family: Verdana, Helvetica;
+	font-size: 95%;
+	font-weight: bold;
+}
+#intro a:hover {
+	color: Lavender;
+}
+
+#player div img {
+	width: 100%;
+	/*border: black solid 15px;*/
+}
+#player audio {
+	width: 100%;
+}
+
+#title li {
+	text-shadow: 0 0 0.1em #343434;
+	line-height: 1.5;
+	margin-left: 8px;
+}
+#title li:hover {
+	text-shadow: 0 0 0.6em #787878;
+}
+
+@media screen and (max-width: 825px) {
+	body {
+		background-size: 90%, 900px 500px;
+	}
+	#intro, #player, #events{ 
+		width: 43%; 
+	}
+	#player{ 
+		margin-right: 0px; 
+	}
+	#events{ 
+		display: block; 
+	}
+}
+
+@media screen and (max-width: 600px) {
+	body { 
+		background-size: 90%, 603px 335px; 
+	}
+	#intro, #player, #events{
+		width: 90%;
+		float: none;
+		display: block;
+		margin-right: 0px;
+	}
+	#intro, #player { 
+		margin-right: 0px; 
+	}
+}
