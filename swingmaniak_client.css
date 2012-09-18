@@ -2,7 +2,7 @@
 body {
 
 	background-color: #252525;
-	background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg3.jpg');
+	background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg.jpg');
 	background-position: center bottom, center top;
 	background-repeat: no-repeat;
 	background-size: 60%, cover;
@@ -22,8 +22,10 @@ h1, h3{
 
 .header {
 	color: Black;
-	height: 45px;
+	height: 75px;
 	min-width: 280px;
+	padding-top: 15px;
+	padding-left: 10px;
 }
 
 .content {
