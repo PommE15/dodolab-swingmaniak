@@ -1,11 +1,11 @@
 /*HTML Elements*/
 body {
 
-	background-color: #252525;
-	background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg.jpg');
+	background-color: #FFF;
+	/*background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg.jpg');
 	background-position: center bottom, center top;
 	background-repeat: no-repeat;
-	background-size: 60%, cover;
+	background-size: 60%, cover;*/
 	font-family: Times New Roman, Times;
 	margin: 0px;
 }
@@ -49,13 +49,13 @@ h1, h3{
 	margin-right: 8px;
 }
 
-#intro a {
+/*#intro*/ a {
 	color: Grey;
 	font-family: Verdana, Helvetica;
 	font-size: 95%;
 	font-weight: bold;
 }
-#intro a:hover {
+/*#intro*/ a:hover {
 	color: Lavender;
 }
 
