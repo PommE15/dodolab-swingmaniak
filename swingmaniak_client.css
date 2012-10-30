@@ -5,7 +5,7 @@
 }*/
 
 body {
-	background-color: #FFFS;
+	background-color: #FFF;
 	/*background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg.jpg');
 	background-position: center bottom, center top;
 	background-repeat: no-repeat;
@@ -125,7 +125,7 @@ a:hover {
 
 @media screen and (max-width: 800px) {
 	body { 
-		background-size: 100%;
+		background-size: 108%;
 		background-position: center bottom;
 	}
 	.center {
