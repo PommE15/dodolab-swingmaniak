@@ -80,6 +80,7 @@ function init() {
 	music.addEventListener("ended", playNext, false);
 	
 	playNext();
+	music.pause();
 }
 
 window.onload = init;

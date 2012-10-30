@@ -1,16 +1,19 @@
 ﻿<!doctype html>
 <html lang="en">
 	<head>
-		<title>JAZZ Improve</title>
+		<title>Swing Maniak</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width"> <!-- mobile browser -->
 		<link rel="stylesheet" href="swingmaniak_client.css">
 		<script src="musicplayer.js"></script>
+		<script src="swingmaniakonfb.js"></script>
 	</head>
-	<body>
+	<body class="center">
+		<div id="fb-root"></div>
 		<div class="header">
 			<img src="assets/img/logo3.png"/><br/> 
 		</div>
+		
 		<div class="content">
 			<div id="intro">
 				<h3>About US</h3>
@@ -32,31 +35,35 @@
 				Stéphane Chapuis ( accordéon ) <br/>
 				Brice Pianet ( contre basse ) <br/>
 				</p><p>
-				Le collectif se fera un plaisir immense de jouer pour vous lors de différentes occasion et au nombre que vous souhaitez ...
+				Le collectif se fera un plaisir immense de jouer pour vous lors de différentes occasion (concert, apéro, mariage, souper d'entreprise and etc) et au nombre que vous souhaitez ...
 				</p><p>
 				let's swing ! 
 				</p>
-				<a href="http://www.youtube.com/watch?v=OThLIeG8GGk" target="_blank"><span>VIDEO</span></a><br/>
 			</div>
 			<div id="player">
 				<div id="image"></div>
 				<audio id="music" controls></audio>
 				<ol id="title"></ol>
-			</div>
+				<br/>
+				<a class="youtube-vedio" href="http://www.youtube.com/watch?v=OThLIeG8GGk" target="_blank"><span>VIDEO</span></a><br/>
+			</div>			
 			<div id="events">
 				<h3>Events</h3>
-				<p>Follow our coming up events on <a href="https://www.facebook.com/SwingManiak" target="_blank">Facebook<!--img src="assets/img/fb.png"/--></a>.</p>
+				<!--p>Follow our coming up events on <a href="https://www.facebook.com/SwingManiak" target="_blank">Facebook<!--img src="assets/img/fb.png"/></a>.</p-->
+				<div class="fb-box-custom">
+					<div class="fb-like-box" data-href="https://www.facebook.com/SwingManiak" data-width="245" data-height="340" data-border-color="#333" data-colorscheme="dark" data-show-faces="false" data-stream="true" data-header="false" data-footer="false"></div>				
+				</div>
 				<h3>Contact</h3>
 				<p>
 				Greg Pittet<br/>
 				079 362 64 93<br/> 
-				pittetgreg [at] gmail [dot] com<br/>
-				</p><p>
-				We perform in a concert, apéro, mariage, souper d'entreprise and etc. 
+				<a href="mailto:pittetgreg@gmail.com">pittetgreg@gmail.com</a><br/>
 				</p>
 			</div>
+
 		</div>
 		<div class="footer">
+		- Website Created by Dodo lab -
 		</div>
 	</body>
 </html>
