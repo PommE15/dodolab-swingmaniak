@@ -1,11 +1,21 @@
 /*HTML Elements*/
-body {
+/* {
+	margin: 0;
+	padding: 0;
+}*/
 
-	background-color: #FFF;
+body {
+	background-color: #FFFS;
 	/*background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg.jpg');
 	background-position: center bottom, center top;
 	background-repeat: no-repeat;
 	background-size: 60%, cover;*/
+	
+	background-image: url('assets/img/bg8.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
 	font-family: Times New Roman, Times;
 	margin: 0px;
 }
@@ -14,49 +24,72 @@ h1, h3{
 	font-family: Verdana, Helvetica;
 }
 
+a {
+	color: Grey;
+}
+a:hover {
+	color: Lavender;
+}
+
+
 /*Class Elements*/
-.header, .content {
-	width: 95%;
-	margin: 0px auto;
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
 }
 
 .header {
 	color: Black;
-	height: 75px;
 	min-width: 280px;
 	padding-top: 15px;
-	padding-left: 10px;
+}
+.header img{
+	display: block;
+	margin: 0px auto;
 }
 
-.content {
-	color: White;
+.content {	 	
+	color: White; 	
 	display: block;
+	margin: 0px auto;
+}
+
+.youtube-vedio{
+	font-family: Verdana, Helvetica;
+	font-size: 90%;
+	font-weight: bold;
+}
+
+.fb-box-custom {
+	height: 300px;
+	overflow: hidden;
+}
+
+.footer {
+	text-align: center;
+	height: 30px;
+	padding-top: 5px;
 }
 
 /*Page Elemets*/
 #intro, #player, #events{
-	background-image: url('assets/img/grey.png');
+	background: rgba(0, 0, 0, 0.8);
 	box-shadow: 0 8px 6px -6px black;
-	width: 28%;
-	min-width: 220px;
-	float: left;	
-	display: inline-block;
 	margin-bottom: 15px;
 	padding: 15px;
-}
+	
+	width: 280px;
+	/*max-width: 360px;*/
+	min-width: 200px;
+	display: inline-block;
+	vertical-align: top;
+} 
 
-#intro, #player {
-	margin-right: 8px;
-}
-
-/*#intro*/ a {
-	color: Grey;
-	font-family: Verdana, Helvetica;
-	font-size: 95%;
-	font-weight: bold;
-}
-/*#intro*/ a:hover {
-	color: Lavender;
+#player {
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 #player div img {
@@ -76,32 +109,49 @@ h1, h3{
 	text-shadow: 0 0 0.6em #787878;
 }
 
-@media screen and (max-width: 825px) {
-	body {
-		background-size: 90%, 900px 500px;
+@media screen and (max-width: 1024px) {
+	.center {
+		width: 769px;
 	}
-	#intro, #player, #events{ 
-		width: 43%; 
-	}
-	#player{ 
-		margin-right: 0px; 
-	}
-	#events{ 
-		display: block; 
+	#intro, #player, #events {
+		width: 220px;
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	body { 
-		background-size: 90%, 603px 335px; 
+		background-size: 100%;
+		background-position: center bottom;
+	}
+	.center {
+		width: 390px;
+	}
+	#intro, #player, #events{
+		width: 360px;
+		margin-left: 0px;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.header img{
+		width: 102%;
+	}
+	.center {
+		width: 90%;
 	}
 	#intro, #player, #events{
 		width: 90%;
-		float: none;
-		display: block;
-		margin-right: 0px;
 	}
-	#intro, #player { 
-		margin-right: 0px; 
+}
+
+@media screen and (max-width: 320px) {
+	.header img{
+		width: 100%;
+	}
+	.center {
+		width: 270px;
+	}
+	#intro, #player, #events{
+		width: 240px;
 	}
 }
