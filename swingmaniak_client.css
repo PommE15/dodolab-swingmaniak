@@ -3,29 +3,26 @@
 	margin: 0;
 	padding: 0;
 }*/
+/* {	border: 1px solid blue;}*/
 
 body {
-	background-color: #FFF;
-	/*background-image: url('assets/img/chairandguiter.png'), url('assets/img/bg.jpg');
-	background-position: center bottom, center top;
-	background-repeat: no-repeat;
-	background-size: 60%, cover;*/
-	
 	background-image: url('assets/img/bg8.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: 105%;
 	
 	font-family: Times New Roman, Times;
-	margin: 0px;
+	margin: 0;
 }
 
 h1, h3{
 	font-family: Verdana, Helvetica;
+	margin-top: 10px;
 }
 
 a {
 	color: Grey;
+	text-decoration: none;
 }
 a:hover {
 	color: Lavender;
@@ -41,8 +38,9 @@ a:hover {
 }
 
 .header {
-	color: Black;
-	min-width: 280px;
+
+	min-width: 260px;
+	height: 85px;
 	padding-top: 15px;
 }
 .header img{
@@ -50,10 +48,20 @@ a:hover {
 	margin: 0px auto;
 }
 
+.menu {
+	display: none;
+}
+
 .content {	 	
 	color: White; 	
 	display: block;
 	margin: 0px auto;
+	position: relative; 
+}
+.icon-right {
+	position: absolute;
+	top: -45px;
+	right: 0;
 }
 
 .youtube-vedio{
@@ -63,12 +71,14 @@ a:hover {
 }
 
 .fb-box-custom {
-	height: 320px;
+	height: 300px;
 	overflow: hidden;
 }
 
 .footer {
+	color: Dimgrey;
 	text-align: center;
+	font-size: 72%;
 	height: 30px;
 }
 
@@ -89,7 +99,7 @@ a:hover {
 #player {
 	margin-left: 5px;
 	margin-right: 5px;
-	padding-top: 65px;
+	padding-top: 60px;
 }
 
 #player div img {
@@ -120,19 +130,36 @@ a:hover {
 	#intro, #player, #events {
 		width: 220px;
 	}
+	#intro, #events {
+		line-height: 120%;
+		font-size: 90%;
+	}
 }
 
 @media screen and (max-width: 800px) {
 	body { 
-		background-size: 108%;
-		background-position: center bottom;
+		/*background-size: 108%;
+		background-position: center bottom;*/
+	
+		background-image: url('assets/img/bg9_1.jpg'), url('assets/img/bg9_2.jpg'), url('assets/img/bg9_3.jpg');
+		background-position: left top, left center, right bottom;
+		background-repeat: no-repeat;
+		background-size: 30%, 50%, 45%;
 	}
 	.center {
 		width: 390px;
 	}
+	.menu {
+		display: block;
+	}
+	
 	#intro, #player, #events{
 		width: 360px;
 		margin-left: 0px;
+	}
+	#intro, #events {
+		line-height: auto;
+		font-size: 100%;
 	}
 }
 
@@ -143,17 +170,26 @@ a:hover {
 	.center {
 		width: 90%;
 	}
+	.icon-right {
+		right: 5px;
+	}
 	#intro, #player, #events{
 		width: 90%;
 	}
 }
 
 @media screen and (max-width: 320px) {
+	.header {
+		height: 60px;
+	}
 	.header img{
 		width: 100%;
 	}
 	.center {
 		width: 270px;
+	}
+	.icon-right {
+		right: 0px;
 	}
 	#intro, #player, #events{
 		width: 240px;
