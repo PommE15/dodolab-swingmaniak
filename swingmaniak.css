@@ -4,6 +4,7 @@
 	
 body, h1, h3, p{
 	font-family: Times New Roman, Times;
+	font-size: normal;
 	margin: 0;
 	padding: 0;
 }
@@ -38,7 +39,7 @@ a, a:hover {
 /*Class Elements*/
 .box-bg {
 	color: White;
-	/*background: rgba(0, 0, 0, 0.9);*/
+	background: rgba(0, 0, 0, 0.3);
 	background-image: url('assets/img/grey.png'); /*for IE8 and under*/
 	box-shadow: 0 8px 6px -6px black;
 }
@@ -228,16 +229,18 @@ a, a:hover {
 		min-width: 240px;
 		width: 90%;
 	}
+	#header #logo { 	 	
+		width: 75%;
+		margin-left: 0;
+		/*margin-bottom: 40px;*/
+	}
 	#header #icon-right {
 		right: -1px;
-		bottom: -75px;
+		bottom: 1%;
 	}
 	#header #icon-left {
 		right: 35px;
-		bottom: -75px;
-	}
-	#header img {
-		margin-bottom: 40px;
+		bottom: 1%;
 	}
 }
 @media screen and (max-width: 320px) {
