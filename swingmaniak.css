@@ -18,6 +18,7 @@ body {
 
 h3 {
 	font-family: Verdana, Helvetica;
+	font-size: 20px;
 	padding: 20px 0;
 }
 
@@ -31,6 +32,10 @@ a, a:hover {
 }
 
 /*Class Elements*/
+.box-div {
+	border-top: 1px dotted LightGrey;
+	height: 5px;
+}
 .box-bg {
 	color: White;
 	background: rgba(0, 0, 0, 0.3);
@@ -52,7 +57,7 @@ a, a:hover {
 	font-weight: bold;
 }
 .title {
-	font-family: Times New Roman, Times;
+	font-family: Times New Roman;
 	font-size: 16px;
 }
 .place {
@@ -113,19 +118,20 @@ a, a:hover {
 #menu {
 	color: #CCC;
 	background-color: White;
-	border-bottom: 1px dotted lightgrey;
+	font-size: 16px;
 	width: 100%;
-	height: 15px;
+	height: 20px;
 	position: fixed;
 	top: 0;
-	z-index: 10;
+	z-index: 1;
 	display: none;
 }
-#menu a {margin-right: 2%;}
+#menu a {
+	margin-right: 2%;
+}
 #menu a, #menu a:hover, #menu a:visited {
 	color: #AAA;
 	font-family: Verdana, Helvetica;
-	font-size: 16px;
 	font-weight: bold;
 }
 
